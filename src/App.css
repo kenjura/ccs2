@@ -1,32 +1,188 @@
-.App {
-  text-align: center;
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+header#header {
+  background-color: #123456;
+  box-sizing: border-box;
+  display: block;
+  height: 64px;
+  left: 0;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+
+    color: white;
+    font-size: 36px;
+    line-height: 64px;
+}
+header a {
+  background: none !important;
+  color: white !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav#nav {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 560;
+}
+nav#nav li {
+  list-style: none;
+  display: inline-block;
+}
+nav#nav a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  /* color: black; */
+  border-bottom: none;
+  padding: 16px 32px;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 16px;
+}
+nav#nav .active {
+  background-color: hsl(240, 1%, 14%);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+div#main {
+  position: absolute;
+  top: 64px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+
+  background: hsl(240, 1%, 14%);
+  min-height: calc(100vh - 64px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#title {
+  color: white;
+  font-size: 36px;
+  left: 340px;
+  position: fixed;
+  top: 24px;
+  z-index: 505;
+}
+h1#title::before     {
+    content: " ";
+    display: block;
+    width: 2px;
+    height: 20px;
+    background: white;
+    position: absolute;
+    left: -27px;
+    top: 0px;
+}
+
+
+/** asset detail **/
+article#asset {
+  margin: 20px;
+}
+
+#rack-info {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.standard-table {
+  border-collapse: collapse;
+  margin-bottom: 32px;
+}
+.standard-table td {
+  padding: 3px 10px;
+}
+.standard-table th {
+  color: #226;
+  padding: 3px 5px;
+    /*font-size: 130%;*/
+}
+.standard-table th[colspan] {
+    text-align: center;
+}
+.standard-table tr {
+  border-bottom: 1px solid #eee;
+}
+.standard-table tr:last-of-type {
+  border-bottom: none;
+}
+.fact-table-vertical td:first-of-type {
+  font-weight: bold;
+}
+/*
+article#asset table[position="left"] td,
+article#asset table[position="left"] th {
+  border: 1px solid #ddd;
+  width: 20em;
+}
+article#asset table {
+  margin-bottom: 1em;
+}*/
+.standard-table span[contentEditable="true"],
+.standard-table input {
+  background: hsl(190, 90%, 98%); 
+  border-radius: 3px;
+  box-shadow: inset 0px 0px 0px 2px hsla(190, 90%, 50%, 50%);
+  display: block;
+  padding: 5px;
+  margin: -5px;
+}
+
+.standard-table input {
+  border-width: 0;
+}
+
+
+div#main section {
+}
+
+
+/*
+
+
+article#asset {
+  th {
+    background: #eee;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  td:first-of-type {
+    font-weight: bold;
+    text-align: right;
   }
 }
+*/
+
+
+
+/* tables */
+
+
