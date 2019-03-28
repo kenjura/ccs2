@@ -1,6 +1,6 @@
 # Cool Character Sheet v2
 
-It's a web app to create a character sheet for [5e Advanced](http://wiki.kenjura.com/5e%20Advanced). WIP.
+It's a web app to create a character sheet for [5e Advanced](http://wiki.bertball.com/5e%20Advanced). WIP.
 
 # Create React App boilerplate
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
